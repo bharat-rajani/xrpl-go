@@ -1,11 +1,5 @@
 package models
 
-type BaseRequest struct {
-	Id         string `json:"id,omitempty"`
-	Command    string `json:"command,omitempty"`
-	ApiVersion int16  `json:"api_version,omitempty"`
-}
-
 type Warning struct {
 	Id      int               `json:"id,omitempty"`
 	Message string            `json:"message,omitempty"`
@@ -31,4 +25,10 @@ type ErrorResponse struct {
 	ErrorCode    string `json:"error_code,omitempty"`
 	ErrorMessage string `json:"error_message,omitempty"`
 	ApiVersion   int16  `json:"api_version,omitempty"`
+}
+
+type BaseRequest struct {
+	Id         string `json:"id,omitempty"`
+	Command    string `json:"command,omitempty"`
+	ApiVersion int16  `json:"api_version,omitempty"`
 }
